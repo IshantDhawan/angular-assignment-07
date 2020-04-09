@@ -1,0 +1,17 @@
+            <table id="customers">
+                <thead>
+                    <tr >
+                        <th *ngFor="let key of accountKeys">{{key}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let account of accountsList">
+                        <td>{{account.date}}</td>
+                        <td>{{account.chequeNo}}</td>
+                        <td>{{account.valueDate}}</td>
+                        <td>{{account.withdrawal}}</td>
+                        <td>{{account.deposit}}</td>
+                        <td>{{account.closingBalance}}</td>
+                    </tr>
+                </tbody>
+            </table>
